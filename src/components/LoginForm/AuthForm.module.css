@@ -1,0 +1,153 @@
+.container {
+  display: flex;
+  justify-content: center;
+  
+  margin-top: 10px;
+  background-color: #000;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  background-color: #1c1c1c;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  border: 1px solid #2b2b2b;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.input_group {
+  margin-bottom: 1.5rem;
+}
+
+.input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background-color: #2a2a2a;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.4);
+}
+
+.submit_btn {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #5d5e61;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submit_btn:hover {
+  background-color: #4f5055;
+}
+
+.submit_btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error_box,
+.message_box {
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  border: 1px solid transparent;
+}
+
+.error_box,
+.message_box.error {
+  background-color: rgba(255, 0, 0, 0.1);
+  color: #ff6666;
+  border-color: rgba(255, 0, 0, 0.2);
+}
+
+.message_box.success {
+  background-color: rgba(0, 255, 0, 0.1);
+  color: #7fffbf;
+  border-color: rgba(0, 255, 0, 0.2);
+}
+.switch_container {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.switch_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.switch_input {
+  display: none;
+}
+
+.switch_label {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  background: #e5e7eb;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.switch_input:checked + .switch_label {
+  background: #3b82f6;
+}
+
+.switch_slider {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background: white;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.switch_input:checked + .switch_label .switch_slider {
+  transform: translateX(30px);
+}
+
+.switch_text {
+  display: flex;
+  gap: 16px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.active_text {
+  color: #3b82f6;
+  transition: color 0.3s ease;
+}
+
+.inactive_text {
+  color: #9ca3af;
+  transition: color 0.3s ease;
+}
