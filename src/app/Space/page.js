@@ -94,7 +94,7 @@ export default async function Space() {
         student: user.student,
         teacher: user.teacher
       }}
-      courses={user.courses}
+      courses={user.createdCourses}
     />
   );
 }

@@ -105,25 +105,7 @@ export default function CoursesClient({ user, courses }) {
                       <span>Created {formatDate(course.createdAt)}</span>
                     </div>
 
-                    {/* Subcourses Preview */}
-                    {/* {course.SubCourses && course.SubCourses.length > 0 && (
-                      <div className="mt-4">
-                        <p className="text-xs text-gray-500 mb-2 uppercase tracking-wide">Course Content</p>
-                        <div className="space-y-1">
-                          {course.SubCourses.slice(0, 3).map((subCourse, index) => (
-                            <div key={subCourse.id} className="text-sm text-gray-300 flex items-center">
-                              <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2 flex-shrink-0"></div>
-                              <span className="truncate">{subCourse.title}</span>
-                            </div>
-                          ))}
-                          {course.SubCourses.length > 3 && (
-                            <div className="text-xs text-gray-500 ml-3.5">
-                              +{course.SubCourses.length - 3} more lessons
-                            </div>
-                          )}
-                        </div>
-                      </div>
-                    )} */}
+                    
                   </div>
                 </div>
               ))}
